@@ -154,9 +154,9 @@
       <div class="info-icon">▶</div><div class="info-copy"><div class="info-kicker">Quick guide</div><h2>How to use Facade Studio</h2><p>Watch the walkthrough to learn how to choose a palette, set the sky and lighting, and copy your image-editing prompt.</p><button class="primary-btn" id="openTutorial"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m9 6 10 6-10 6z"/></svg>Watch tutorial</button></div>
     </article>
     <article class="info-card developer-card" id="developer">
-      <img class="developer-avatar" src="developer-photo.jpg" alt="Md. Mahfuzul Amin Raju profile photo" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
-      <div class="developer-avatar-fallback" hidden aria-hidden="true">MR</div>
-      <div class="info-copy"><div class="info-kicker">Developer</div><h2><a class="developer-name" href="#developer" title="Developer profile">Md. Mahfuzul Amin RAJU</a></h2><p>Designed and developed Facade Studio.</p><div class="developer-note">To use a personal photo, place it beside this HTML file as <code>developer-photo.jpg</code>. Update the profile link in the HTML when your profile URL is available.</div></div>
+      <img class="developer-avatar" src="raju.jpg" alt="Md. Mahfuzul Amin Raju profile photo" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+     
+      <div class="info-copy"><div class="info-kicker">Developer</div><h2><a class="developer-name" href="https://raju-bd.github.io/Portfolio" title="Developer profile">Md. Mahfuzul Amin RAJU</a></h2><p>Designed and developed Facade Studio.</p></div>
     </article>
   </section>
   <section class="policy-section" id="data-policy" aria-labelledby="policyTitle">
@@ -347,6 +347,29 @@ Include a tasteful, compact, clearly readable color legend in an uncluttered cor
   langBtn.addEventListener('click',()=>setLanguage(uiLanguage==='en'?'bn':'en'));
 
 })();
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBaB6ULIcJCvL05YWRmEOM4toKeHATtClQ",
+    authDomain: "facade-studio-5e3df.firebaseapp.com",
+    projectId: "facade-studio-5e3df",
+    storageBucket: "facade-studio-5e3df.firebasestorage.app",
+    messagingSenderId: "1029052624481",
+    appId: "1:1029052624481:web:333969a914a87de389c420",
+    measurementId: "G-9LG5WYKYKD"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
 </script>
 </body>
 </html>
